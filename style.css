@@ -1,0 +1,70 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: 0;
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+ .title{
+    text-align: center
+    ;
+    background-color: rgb(6, 166, 240);
+    font-size: 3rem;
+    color: white;
+ }
+ .calender
+ {
+    display: grid;
+   
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    padding: 10px;
+    
+
+ }
+.month{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    background-color: rgb(246, 225, 232);
+    row-gap: 10px;
+    column-gap: 10px;
+    
+    align-items: center;
+    
+
+}
+.date{
+    
+    border: 1px solid black;
+    background-color: rgb(84, 197, 235);
+    border-radius: 10px;
+   
+    font-size: 2rem;
+}
+.day{
+    background-color: rgb(42, 147, 245);
+}
+.month-name{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+
+
+
+/* responsive layout */
+@media screen and (max-width:567px) {
+ .calender{
+     grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(1,1fr);
+    padding: 5px;
+ }
+.month{
+    gap: 5px;
+}
+}
