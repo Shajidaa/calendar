@@ -4,7 +4,7 @@
     box-sizing: 0;
 }
 .container{
-    width: 1440px;
+    max-width:  1440px;
     margin: 0 auto;
 }
 
@@ -58,10 +58,21 @@
 
 
 /* responsive layout */
-@media screen and (max-width:567px) {
+@media screen and (max-width:576px) {
  .calender{
      grid-template-rows: repeat(1,1fr);
     grid-template-columns: repeat(1,1fr);
+    padding: 5px;
+ }
+.month{
+    gap: 5px;
+}
+}
+
+@media screen  and (min-width:577px) and (max-width:990px) {
+     .calender{
+     grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(2,1fr);
     padding: 5px;
  }
 .month{
